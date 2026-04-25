@@ -3,7 +3,7 @@
 ###
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=I'm+Manvesh;I+Love+To+Code+Unauthorized+Shit)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=I'm+Manvesh;Love+To+Code+Unauthorized+Shit)](https://git.io/typing-svg)
 
 </div>
 
@@ -11,7 +11,7 @@
 
 ---
 
-<h4 align="left">| 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞𝐬 𝐢 𝐠𝐨𝐭 𝐚 𝐥𝐢𝐥 𝐠𝐫𝐢𝐩 𝐚𝐭 :</h4>
+<h2 align="left">| 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞𝐬 𝐢 𝐠𝐨𝐭 𝐚 𝐥𝐢𝐥 𝐠𝐫𝐢𝐩 𝐚𝐭 :</h2>
 
 ###
 
