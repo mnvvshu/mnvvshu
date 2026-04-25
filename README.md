@@ -1,6 +1,7 @@
-<div align="center">
+<h1 align="left">| 𝐋𝐢𝐥 𝐈𝐧𝐭𝐫𝐨 👾 :-</h1>
 
-# 👋 Hey, I'm mnvvshu
+###
+<div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Code+%26+Coffee+Enthusiast;Always+Learning+Something+New)](https://git.io/typing-svg)
 
