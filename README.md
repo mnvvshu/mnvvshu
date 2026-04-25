@@ -1,4 +1,4 @@
-<h1 align="left">| 𝐋𝐢𝐥 𝐈𝐧𝐭𝐫𝐨 👾 :-</h1>
+<h1 align="left">| 𝐋𝐢𝐥 𝐈𝐧𝐭𝐫𝐨 :</h1>
 
 ###
 <div align="center">
