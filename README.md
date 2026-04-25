@@ -42,15 +42,6 @@
 
 ---
 
-## 🎯 Currently
-
-- 🔭 Building cool stuff with **JavaScript & Python**
-- 🌱 Learning **Cloud Architecture**
-- 👯 Open to **collaborations**
-- ⚡ Fun fact: **I debug with console.log() and proud of it!**
-
----
-
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=mnvvshu&color=blueviolet&style=flat-square&label=Profile+Views"/>
 </div>
