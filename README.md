@@ -1,11 +1,4 @@
 <div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Love+To+Code+Unauthorized+Shit)](https://git.io/typing-svg)
-
-<img src="https://komarev.com/ghpvc/?username=mnvvshu&color=blueviolet&style=flat-square&label=Profile+Views" alt="profile views" />
-
-</div>
-
 ---
 
 ## ⚡ Lil Intro
@@ -13,6 +6,14 @@
 Hey there! I'm **Manvesh** — a passionate developer who loves to code unauthorized shit and push the boundaries of what's possible. Whether it's optimizing systems, building tools, or experimenting with new tech, I'm always down to ship something interesting.
 
 > *"Code is poetry — write it like no one's watching, ship it like everyone is."*
+
+---
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Love+To+Code+Unauthorized+Shit)](https://git.io/typing-svg)
+
+<img src="https://komarev.com/ghpvc/?username=mnvvshu&color=blueviolet&style=flat-square&label=Profile+Views" alt="profile views" />
+
+</div>
 
 ---
 
