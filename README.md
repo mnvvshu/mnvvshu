@@ -9,7 +9,7 @@
 ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝  ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═╝
 ```
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=I'm+Manvesh;Love+To+Code+Unauthorized+Shit;Always+Learning+%F0%9F%9A%80;Builder+%7C+Hacker+%7C+Creator)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Love+To+Code+Unauthorized+Shit)](https://git.io/typing-svg)
 
 <img src="https://komarev.com/ghpvc/?username=mnvvshu&color=blueviolet&style=flat-square&label=Profile+Views" alt="profile views" />
 
@@ -39,6 +39,17 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to code unauthor
     <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45" height="45"/><br/>Java</td>
   </tr>
 </table>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=mnvvshu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mnvvshu&layout=compact&theme=tokyonight&hide_border=true" height="170"/>
+
+</div>
 
 ---
 
