@@ -1,6 +1,3 @@
-<div align="center">
----
-
 ## ⚡ Lil Intro
 
 Hey there! I'm **Manvesh** — a passionate developer who loves to code unauthorized shit and push the boundaries of what's possible. Whether it's optimizing systems, building tools, or experimenting with new tech, I'm always down to ship something interesting.
