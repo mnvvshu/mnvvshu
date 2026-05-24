@@ -42,17 +42,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to code unauthor
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=mnvvshu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" height="170"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mnvvshu&layout=compact&theme=tokyonight&hide_border=true" height="170"/>
-
-</div>
-
----
-
 ## 🏆 Trophies
 
 <div align="center">
