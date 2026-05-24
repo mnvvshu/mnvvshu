@@ -27,43 +27,21 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to code unauthor
 
 ## 🛠️ Languages I Got a Lil Grip At
 
-<div align="center">
-
-| Language | Vibe |
-|----------|------|
-| ![Bash](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg) **Bash** | Automation & system magic |
-| ![HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg) **HTML5** | Structure & semantics |
-| ![CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg) **CSS3** | Making things pretty |
-| ![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) **JavaScript** | Bringing the web to life |
-| ![Python](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg) **Python** | Scripts, tools & beyond |
-| ![C#](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg) **C#** | When things need structure |
-| ![CoffeeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg) **CoffeeScript** | Because why not |
-| ![Java](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg) **Java** | The OG workhorse |
-
-</div>
-
----
-
-## 🚀 Projects Worth a Look
-
-### 🖥️ [MY-2023-OPTIMIZER](https://github.com/mnvvshu/MY-2023-OPTIMIZER)
-> Transforms your potato PC into something resembling a mid-end machine. A Batch-script based optimizer that actually works — built for those who refuse to upgrade hardware.
-
-`Batchfile` · System Optimization · Performance Tweaking
-
----
-
-### 💬 [ephemeral-chat](https://github.com/mnvvshu/ephemeral-chat)
-> Messages that vanish. A chat application built on the idea that not everything needs to be permanent.
-
-`HTML` · Real-time Communication · Web App
-
----
-
-### 🔍 [CC-CHECKER](https://github.com/mnvvshu/CC-CHECKER)
-> A Python utility tool. Does what it says.
-
-`Python` · Tool · Utility
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="40" height="40" title="Bash"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" title="HTML5"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" title="CSS3"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" title="JavaScript"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" title="Python"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" height="40" title="C#"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg" width="40" height="40" title="CoffeeScript"/>
+<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40" title="Java"/>
 
 ---
 
