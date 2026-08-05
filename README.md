@@ -39,16 +39,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 ---
 
-## 📡 Connect
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-mnvvshu-181717?style=for-the-badge&logo=github)](https://github.com/mnvvshu)
-
-</div>
-
----
-
 <div align="center">
 
 *Thanks for stopping by — drop a ⭐ if anything here was useful!*
