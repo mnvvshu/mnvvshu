@@ -29,16 +29,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 ---
 
-## 🏆 Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=mnvvshu&theme=dracula&no-frame=true&no-bg=true&margin-w=10&row=1"/>
-
-</div>
-
----
-
 ## 📈 Contribution Graph
 
 <div align="center">
