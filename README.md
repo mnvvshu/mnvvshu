@@ -36,8 +36,8 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 <img src="https://ghchart.rshah.org/00D9FF/mnvvshu" alt="Contribution Graph"/>
 
 ---
-<p align="center">
-  
+<div>
+  <td align="center">
 *Thanks for stopping by — drop a ⭐ if anything here was useful!*
 
 </div>
