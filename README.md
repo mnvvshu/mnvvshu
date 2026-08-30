@@ -1,3 +1,5 @@
+<div align="center">
+
 ## ⚡ Lil Intro
 
 Hey there! I'm **Manvesh** — a passionate developer who loves to push the boundaries of what's possible. Whether it's optimizing systems, building tools, or experimenting with new tech, I'm always down to ship something interesting.
@@ -14,22 +16,18 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 ## 🛠️ Languages I Got a Lil Grip At
 
-<table>
-<tr>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="45" height="45"/><br/>Bash</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="45" height="45"/><br/>HTML5</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" height="45"/><br/>CSS3</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" height="45"/><br/>JavaScript</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45"/><br/>Python</td>
-</tr>
-<tr>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="45" height="45"/><br/>C#</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg" width="45" height="45"/><br/>CoffeeScript</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45" height="45"/><br/>Java</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="45" height="45"/><br/>Go</td>
-  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="45" height="45"/><br/>PHP</td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=coffeescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+</p>
 
 ---
 
@@ -39,17 +37,11 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 <img src="https://streak-stats.demolab.com?user=mnvvshu&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 
-</div>
+<br/>
 
-<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=mnvvshu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats"/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=mnvvshu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="180"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mnvvshu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="180"/>
-
-</div>
-
-<div align="center">
+<br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=mnvvshu&theme=tokyo-night&hide_border=true&area=true"/>
 
