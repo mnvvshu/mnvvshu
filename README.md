@@ -25,6 +25,7 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg" width="45" height="45"/><br/>CoffeeScript</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45" height="45"/><br/>Java</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="45" height="45"/><br/>Go</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="45" height="45"/><br/>PHP</td>
 </tr>
 </table>
 
@@ -34,7 +35,11 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=mnvvshu&theme=tokyo-night&hide_border=true&area=true"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=mnvvshu&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=mnvvshu&theme=tokyo-night&hide_border=true&area=true&v=2026-08-31"/>
 
 </div>
 
