@@ -33,7 +33,7 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 ## 📈 Contribution Graph
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=mnvvshu&theme=github-compact&hide_border=true&area=true"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=mnvvshu&theme=merko&hide_border=true&area=true"/>
 
 ---
 
