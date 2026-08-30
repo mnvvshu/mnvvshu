@@ -21,8 +21,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" height="45"/><br/>CSS3</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" height="45"/><br/>JavaScript</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45"/><br/>Python</td>
-</tr>
-<tr>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="45" height="45"/><br/>C#</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg" width="45" height="45"/><br/>CoffeeScript</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45" height="45"/><br/>Java</td>
@@ -33,12 +31,18 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 ---
 
-## 📈 GitHub Stats & Contribution Graph
+## 📈 Contribution Graph
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=mnvvshu&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+</div>
 
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=mnvvshu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="180"/>
-
+&nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mnvvshu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="180"/>
 
 </div>
