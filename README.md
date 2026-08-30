@@ -1,5 +1,3 @@
-<div align="center">
-
 ## ⚡ Lil Intro
 
 Hey there! I'm **Manvesh** — a passionate developer who loves to push the boundaries of what's possible. Whether it's optimizing systems, building tools, or experimenting with new tech, I'm always down to ship something interesting.
@@ -44,7 +42,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 <br/><br/>
 
 ---
-
 <div align="center">
   
 *Thanks for stopping by — drop a ⭐ if anything here was useful!*
