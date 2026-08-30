@@ -33,11 +33,19 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 ## 📈 Contribution Graph
 
-<img src="https://ghchart.rshah.org/00D9FF/mnvvshu" alt="Contribution Graph"/>
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=mnvvshu&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mnvvshu&theme=tokyonight" alt="Contribution Graph" width="800"/>
+
+</div>
 
 ---
-<div>
-  <td align="center">
+<div align="center">
+  
 *Thanks for stopping by — drop a ⭐ if anything here was useful!*
 
 </div>
