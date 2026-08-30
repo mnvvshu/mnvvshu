@@ -1,80 +1,56 @@
 <div align="center">
 
-<!-- Replace YOUR_USERNAME with your GitHub username -->
-# 📈 YOUR_USERNAME
+## ⚡ Lil Intro
 
-### Contribution Trading Chart
+Hey there! I'm **Manvesh** — a passionate developer who loves to push the boundaries of what's possible. Whether it's optimizing systems, building tools, or experimenting with new tech, I'm always down to ship something interesting.
 
-<img src="./assets/contributions-candlestick.svg" alt="GitHub Contributions Candlestick Chart" width="100%">
+> *"Code is poetry — write it like no one's watching, ship it like everyone is."*
 
-<sub>Each candle = 1 week · 🟢 Bullish (ended week stronger) · 🔴 Bearish (tapered off) · Blue line = 4-week SMA</sub>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Love+To+Code+Unauthorized+Shit)](https://git.io/typing-svg)
 
----
-
-*My GitHub contributions, visualized as a candlestick trading chart.*
-*Green candles mean I finished the week coding harder than I started. Red means I took it easy.*
+<img src="https://komarev.com/ghpvc/?username=mnvvshu&color=blueviolet&style=flat-square&label=Profile+Views" alt="profile views" />
 
 </div>
 
 ---
 
-### 🛠️ How It Works
+## 🛠️ Languages I Got a Lil Grip At
 
-This chart is **auto-generated daily** by a GitHub Action that:
+<table>
+<tr>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="45" height="45"/><br/>Bash</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="45" height="45"/><br/>HTML5</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" height="45"/><br/>CSS3</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" height="45"/><br/>JavaScript</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45"/><br/>Python</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="45" height="45"/><br/>C#</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg" width="45" height="45"/><br/>CoffeeScript</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45" height="45"/><br/>Java</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="45" height="45"/><br/>Go</td>
+  <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="45" height="45"/><br/>PHP</td>
+</tr>
+</table>
 
-1. Fetches my contribution data via the GitHub GraphQL API
-2. Converts daily commits into weekly **OHLC candlestick** data (Open/High/Low/Close)
-3. Renders a pure **SVG** chart with volume bars and moving average
-4. Commits the updated chart back to this repo
+---
 
-**Want your own?** Fork this repo, and the Action will auto-detect your username!
+## 📈 Contribution Graph
 
-<details>
-<summary>📖 Reading the Chart</summary>
+<div align="center">
 
-| Element | Meaning |
-|---------|---------|
-| 🟢 Green candle | **Bullish week** — Sunday contributions ≥ Monday (finished strong) |
-| 🔴 Red candle | **Bearish week** — Sunday contributions < Monday (tapered off) |
-| Wick (thin line) | The week's **high** and **low** contribution days |
-| Candle body | Range between **open** (Monday) and **close** (Sunday) |
-| Blue line | **4-week Simple Moving Average** of closing values |
-| Bottom bars | **Volume** — total weekly contributions |
+<img src="./assets/contributions-candlestick.svg" alt="GitHub Contributions Candlestick Chart" width="100%">
 
-</details>
+<sub>Each candle = 1 week · 🟢 Bullish (ended week stronger) · 🔴 Bearish (tapered off) · Blue line = 4-week SMA</sub>
 
-<details>
-<summary>⚡ Setup Instructions</summary>
+<br/><br/>
 
-### Quick Setup
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mnvvshu&theme=tokyonight" alt="Contribution Graph" width="800"/>
 
-1. **Create a new repo** named exactly your GitHub username (e.g., `octocat/octocat`)
-2. **Copy these files** into the repo:
-   - `generate_chart.py`
-   - `.github/workflows/update-candlestick.yml`
-   - `README.md` (this file — customize it!)
-3. **Create the assets directory**: `mkdir assets`
-4. **Push to main** — the Action will run automatically!
-5. The chart updates daily at midnight UTC
+</div>
 
-### Environment Variables
+---
 
-| Variable | Source | Description |
-|----------|--------|-------------|
-| `GITHUB_TOKEN` | Auto-provided by Actions | API authentication |
-| `GITHUB_USERNAME` | Auto-detected from repo owner | Your GitHub username |
-| `OUTPUT_PATH` | Default: `assets/contributions-candlestick.svg` | Where to save the SVG |
+<div align="center">
+  
+*Thanks for stopping by — drop a ⭐ if anything here was useful!*
 
-### Local Testing
-
-```bash
-# Demo mode (no token needed)
-DEMO_MODE=true python generate_chart.py
-
-# Real data
-export GITHUB_TOKEN=ghp_your_token_here
-export GITHUB_USERNAME=your_username
-python generate_chart.py
-```
-
-</details>
+</div>
