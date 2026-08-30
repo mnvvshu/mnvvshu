@@ -21,6 +21,8 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" height="45"/><br/>CSS3</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" height="45"/><br/>JavaScript</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45"/><br/>Python</td>
+</tr>
+<tr>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="45" height="45"/><br/>C#</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/coffeescript/coffeescript-original.svg" width="45" height="45"/><br/>CoffeeScript</td>
   <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="45" height="45"/><br/>Java</td>
@@ -35,11 +37,21 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mnvvshu/mnvvshu/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mnvvshu/mnvvshu/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/mnvvshu/mnvvshu/output/github-snake-dark.svg" />
-</picture>
+<img src="https://streak-stats.demolab.com?user=mnvvshu&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=mnvvshu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="180"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mnvvshu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="180"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=mnvvshu&theme=tokyo-night&hide_border=true&area=true"/>
 
 </div>
 
@@ -47,6 +59,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 <div align="center">
 
-*Thanks for stopping by — drop a ❤️ if anything here was useful!*
+*Thanks for stopping by — drop a ⭐ if anything here was useful!*
 
 </div>
