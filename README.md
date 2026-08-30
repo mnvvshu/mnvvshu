@@ -43,10 +43,6 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mnvvshu&theme=tokyonight" alt="Contribution Graph" width="800"/>
-
-</div>
-
 ---
 
 <div align="center">
