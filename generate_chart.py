@@ -419,9 +419,13 @@ def generate_svg(candles, username, total_contributions):
         x = candle_x(i)
         vh = (candle["volume"] / max_vol) * vol_height
         color = COLORS["green_vol"] if candle["bullish"] else COLORS["red_vol"]
+        vol = candle["volume"]
+        date_str = candle["date_start"]
         parts.append(
             f'<rect x="{x - candle_width/2:.1f}" y="{vol_bottom - vh:.1f}" '
-            f'width="{candle_width:.1f}" height="{vh:.1f}" fill="{color}" rx="1"/>'
+            f'width="{candle_width:.1f}" height="{vh:.1f}" fill="{color}" rx="1">'
+            f'<title>Date: {date_str}\nVolume: {vol} commits</title>'
+            f'</rect>'
         )
 
     # ── Candlesticks ─────────────────────────────────────────────────────
@@ -430,6 +434,8 @@ def generate_svg(candles, username, total_contributions):
         x = candle_x(i)
         o, c = candle["open"], candle["close"]
         h, l = candle["high"], candle["low"]
+        vol = candle["volume"]
+        date_str = candle["date_start"]
 
         body_top_y = y_pos(max(o, c))
         body_bot_y = y_pos(min(o, c))
@@ -445,17 +451,25 @@ def generate_svg(candles, username, total_contributions):
             fill = "url(#redGrad)"
             stroke = COLORS["red"]
 
+        parts.append(f'<g style="cursor: pointer;">')
+        parts.append(
+            f'  <title>Date: {date_str}\n'
+            f'Commits: {vol}\n'
+            f'Open: {o} | Close: {c}\n'
+            f'High: {h} | Low: {l}</title>'
+        )
         # Wick line
         parts.append(
-            f'<line x1="{x:.1f}" y1="{wick_top_y:.1f}" x2="{x:.1f}" y2="{wick_bot_y:.1f}" '
+            f'  <line x1="{x:.1f}" y1="{wick_top_y:.1f}" x2="{x:.1f}" y2="{wick_bot_y:.1f}" '
             f'stroke="{stroke}" stroke-width="1" stroke-linecap="round"/>'
         )
         # Candle body
         parts.append(
-            f'<rect x="{x - candle_width/2:.1f}" y="{body_top_y:.1f}" '
+            f'  <rect x="{x - candle_width/2:.1f}" y="{body_top_y:.1f}" '
             f'width="{candle_width:.1f}" height="{body_h:.1f}" '
             f'fill="{fill}" stroke="{stroke}" stroke-width="0.5" rx="1"/>'
         )
+        parts.append(f'</g>')
 
     # ── Moving average line ──────────────────────────────────────────────
     parts.append(f'\n<!-- SMA(4) Moving Average -->')

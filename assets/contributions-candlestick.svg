@@ -47,101 +47,318 @@
 
 <!-- Volume bars -->
 <text x="55" y="357" fill="#8b949e" font-family="monospace" font-size="8">VOL (daily)</text>
-<rect x="60.8" y="406.4" width="14.3" height="3.6" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="86.8" y="390.4" width="14.3" height="19.6" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="112.8" y="399.3" width="14.3" height="10.7" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="138.7" y="399.3" width="14.3" height="10.7" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="164.7" y="397.5" width="14.3" height="12.5" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="190.7" y="399.3" width="14.3" height="10.7" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="216.6" y="393.9" width="14.3" height="16.1" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="242.6" y="404.6" width="14.3" height="5.4" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="268.6" y="408.2" width="14.3" height="1.8" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="294.6" y="401.1" width="14.3" height="8.9" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="320.5" y="406.4" width="14.3" height="3.6" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="346.5" y="390.4" width="14.3" height="19.6" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="372.5" y="395.7" width="14.3" height="14.3" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="398.4" y="393.9" width="14.3" height="16.1" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="424.4" y="404.6" width="14.3" height="5.4" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="450.4" y="408.2" width="14.3" height="1.8" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="476.3" y="392.1" width="14.3" height="17.9" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="502.3" y="399.3" width="14.3" height="10.7" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="528.3" y="360.0" width="14.3" height="50.0" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="554.2" y="381.4" width="14.3" height="28.6" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="580.2" y="390.4" width="14.3" height="19.6" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="606.2" y="410.0" width="14.3" height="0.0" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="632.1" y="406.4" width="14.3" height="3.6" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="658.1" y="395.7" width="14.3" height="14.3" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="684.1" y="395.7" width="14.3" height="14.3" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="710.0" y="388.6" width="14.3" height="21.4" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="736.0" y="397.5" width="14.3" height="12.5" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="762.0" y="388.6" width="14.3" height="21.4" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="787.9" y="406.4" width="14.3" height="3.6" fill="rgba(248,81,73,0.25)" rx="1"/>
-<rect x="813.9" y="385.0" width="14.3" height="25.0" fill="rgba(38,166,65,0.25)" rx="1"/>
-<rect x="839.9" y="397.5" width="14.3" height="12.5" fill="rgba(248,81,73,0.25)" rx="1"/>
+<rect x="60.8" y="406.4" width="14.3" height="3.6" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-01
+Volume: 2 commits</title></rect>
+<rect x="86.8" y="390.4" width="14.3" height="19.6" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-02
+Volume: 11 commits</title></rect>
+<rect x="112.8" y="399.3" width="14.3" height="10.7" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-03
+Volume: 6 commits</title></rect>
+<rect x="138.7" y="399.3" width="14.3" height="10.7" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-04
+Volume: 6 commits</title></rect>
+<rect x="164.7" y="397.5" width="14.3" height="12.5" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-05
+Volume: 7 commits</title></rect>
+<rect x="190.7" y="399.3" width="14.3" height="10.7" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-06
+Volume: 6 commits</title></rect>
+<rect x="216.6" y="393.9" width="14.3" height="16.1" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-07
+Volume: 9 commits</title></rect>
+<rect x="242.6" y="404.6" width="14.3" height="5.4" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-08
+Volume: 3 commits</title></rect>
+<rect x="268.6" y="408.2" width="14.3" height="1.8" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-09
+Volume: 1 commits</title></rect>
+<rect x="294.6" y="401.1" width="14.3" height="8.9" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-10
+Volume: 5 commits</title></rect>
+<rect x="320.5" y="406.4" width="14.3" height="3.6" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-11
+Volume: 2 commits</title></rect>
+<rect x="346.5" y="390.4" width="14.3" height="19.6" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-12
+Volume: 11 commits</title></rect>
+<rect x="372.5" y="395.7" width="14.3" height="14.3" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-13
+Volume: 8 commits</title></rect>
+<rect x="398.4" y="393.9" width="14.3" height="16.1" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-14
+Volume: 9 commits</title></rect>
+<rect x="424.4" y="404.6" width="14.3" height="5.4" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-15
+Volume: 3 commits</title></rect>
+<rect x="450.4" y="408.2" width="14.3" height="1.8" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-16
+Volume: 1 commits</title></rect>
+<rect x="476.3" y="392.1" width="14.3" height="17.9" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-17
+Volume: 10 commits</title></rect>
+<rect x="502.3" y="399.3" width="14.3" height="10.7" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-18
+Volume: 6 commits</title></rect>
+<rect x="528.3" y="360.0" width="14.3" height="50.0" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-19
+Volume: 28 commits</title></rect>
+<rect x="554.2" y="381.4" width="14.3" height="28.6" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-20
+Volume: 16 commits</title></rect>
+<rect x="580.2" y="390.4" width="14.3" height="19.6" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-21
+Volume: 11 commits</title></rect>
+<rect x="606.2" y="410.0" width="14.3" height="0.0" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-22
+Volume: 0 commits</title></rect>
+<rect x="632.1" y="406.4" width="14.3" height="3.6" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-23
+Volume: 2 commits</title></rect>
+<rect x="658.1" y="395.7" width="14.3" height="14.3" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-24
+Volume: 8 commits</title></rect>
+<rect x="684.1" y="395.7" width="14.3" height="14.3" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-25
+Volume: 8 commits</title></rect>
+<rect x="710.0" y="388.6" width="14.3" height="21.4" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-26
+Volume: 12 commits</title></rect>
+<rect x="736.0" y="397.5" width="14.3" height="12.5" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-27
+Volume: 7 commits</title></rect>
+<rect x="762.0" y="388.6" width="14.3" height="21.4" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-28
+Volume: 12 commits</title></rect>
+<rect x="787.9" y="406.4" width="14.3" height="3.6" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-29
+Volume: 2 commits</title></rect>
+<rect x="813.9" y="385.0" width="14.3" height="25.0" fill="rgba(38,166,65,0.25)" rx="1"><title>Date: 2026-08-30
+Volume: 14 commits</title></rect>
+<rect x="839.9" y="397.5" width="14.3" height="12.5" fill="rgba(248,81,73,0.25)" rx="1"><title>Date: 2026-08-31
+Volume: 7 commits</title></rect>
 
 <!-- Candlesticks -->
-<line x1="68.0" y1="316.1" x2="68.0" y2="345.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="60.8" y="329.0" width="14.3" height="4.8" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="94.0" y1="245.2" x2="94.0" y2="338.7" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="86.8" y="261.3" width="14.3" height="72.6" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="119.9" y1="244.4" x2="119.9" y2="307.3" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="112.8" y="261.3" width="14.3" height="40.3" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="145.9" y1="294.4" x2="145.9" y2="311.3" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="138.7" y="301.6" width="14.3" height="1.0" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="171.9" y1="283.1" x2="171.9" y2="306.5" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="164.7" y="293.6" width="14.3" height="8.1" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="197.8" y1="275.8" x2="197.8" y2="310.5" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="190.7" y="293.6" width="14.3" height="8.1" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="223.8" y1="262.1" x2="223.8" y2="307.3" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="216.6" y="277.4" width="14.3" height="24.2" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="249.8" y1="265.3" x2="249.8" y2="341.9" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="242.6" y="277.4" width="14.3" height="48.4" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="275.7" y1="321.0" x2="275.7" y2="350.0" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="268.6" y="325.8" width="14.3" height="16.1" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="301.7" y1="300.0" x2="301.7" y2="350.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="294.6" y="309.7" width="14.3" height="32.2" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="327.7" y1="289.5" x2="327.7" y2="347.6" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="320.5" y="309.7" width="14.3" height="24.2" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="353.6" y1="242.0" x2="353.6" y2="349.2" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="346.5" y="261.3" width="14.3" height="72.6" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="379.6" y1="242.0" x2="379.6" y2="296.0" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="372.5" y="261.3" width="14.3" height="24.2" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="405.6" y1="262.1" x2="405.6" y2="296.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="398.4" y="277.4" width="14.3" height="8.1" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="431.5" y1="257.3" x2="431.5" y2="335.5" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="424.4" y="277.4" width="14.3" height="48.4" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="457.5" y1="321.8" x2="457.5" y2="349.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="450.4" y="325.8" width="14.3" height="16.1" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="483.5" y1="262.9" x2="483.5" y2="350.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="476.3" y="269.4" width="14.3" height="72.6" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="509.4" y1="261.3" x2="509.4" y2="312.1" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="502.3" y="269.4" width="14.3" height="32.2" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="535.4" y1="113.8" x2="535.4" y2="309.7" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="528.3" y="124.3" width="14.3" height="177.4" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="561.4" y1="106.5" x2="561.4" y2="228.3" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="554.2" y="124.3" width="14.3" height="96.7" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="587.3" y1="204.1" x2="587.3" y2="270.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="580.2" y="221.0" width="14.3" height="40.3" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="613.3" y1="242.8" x2="613.3" y2="350.0" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="606.2" y="261.3" width="14.3" height="88.7" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="639.3" y1="317.8" x2="639.3" y2="350.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="632.1" y="333.9" width="14.3" height="16.1" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="665.2" y1="269.4" x2="665.2" y2="346.8" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="658.1" y="285.5" width="14.3" height="48.4" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="691.2" y1="267.8" x2="691.2" y2="296.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="684.1" y="285.5" width="14.3" height="1.0" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="717.2" y1="242.8" x2="717.2" y2="300.8" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="710.0" y="253.3" width="14.3" height="32.2" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="743.1" y1="230.7" x2="743.1" y2="299.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="736.0" y="253.3" width="14.3" height="40.3" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="769.1" y1="231.5" x2="769.1" y2="304.9" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="762.0" y="253.3" width="14.3" height="40.3" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="795.1" y1="245.2" x2="795.1" y2="340.3" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="787.9" y="253.3" width="14.3" height="80.6" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
-<line x1="821.0" y1="225.0" x2="821.0" y2="346.8" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
-<rect x="813.9" y="237.1" width="14.3" height="96.7" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
-<line x1="847.0" y1="226.6" x2="847.0" y2="306.5" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
-<rect x="839.9" y="237.1" width="14.3" height="56.4" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-01
+Commits: 2
+Open: 2.6 | Close: 2
+High: 4.2 | Low: 0.6</title>
+  <line x1="68.0" y1="316.1" x2="68.0" y2="345.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="60.8" y="329.0" width="14.3" height="4.8" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-02
+Commits: 11
+Open: 2 | Close: 11
+High: 13.0 | Low: 1.4</title>
+  <line x1="94.0" y1="245.2" x2="94.0" y2="338.7" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="86.8" y="261.3" width="14.3" height="72.6" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-03
+Commits: 6
+Open: 11 | Close: 6
+High: 13.1 | Low: 5.3</title>
+  <line x1="119.9" y1="244.4" x2="119.9" y2="307.3" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="112.8" y="261.3" width="14.3" height="40.3" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-04
+Commits: 6
+Open: 6 | Close: 6
+High: 6.9 | Low: 4.8</title>
+  <line x1="145.9" y1="294.4" x2="145.9" y2="311.3" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="138.7" y="301.6" width="14.3" height="1.0" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-05
+Commits: 7
+Open: 6 | Close: 7
+High: 8.3 | Low: 5.4</title>
+  <line x1="171.9" y1="283.1" x2="171.9" y2="306.5" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="164.7" y="293.6" width="14.3" height="8.1" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-06
+Commits: 6
+Open: 7 | Close: 6
+High: 9.2 | Low: 4.9</title>
+  <line x1="197.8" y1="275.8" x2="197.8" y2="310.5" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="190.7" y="293.6" width="14.3" height="8.1" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-07
+Commits: 9
+Open: 6 | Close: 9
+High: 10.9 | Low: 5.3</title>
+  <line x1="223.8" y1="262.1" x2="223.8" y2="307.3" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="216.6" y="277.4" width="14.3" height="24.2" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-08
+Commits: 3
+Open: 9 | Close: 3
+High: 10.5 | Low: 1.0</title>
+  <line x1="249.8" y1="265.3" x2="249.8" y2="341.9" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="242.6" y="277.4" width="14.3" height="48.4" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-09
+Commits: 1
+Open: 3 | Close: 1
+High: 3.6 | Low: 0.0</title>
+  <line x1="275.7" y1="321.0" x2="275.7" y2="350.0" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="268.6" y="325.8" width="14.3" height="16.1" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-10
+Commits: 5
+Open: 1 | Close: 5
+High: 6.2 | Low: 0.0</title>
+  <line x1="301.7" y1="300.0" x2="301.7" y2="350.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="294.6" y="309.7" width="14.3" height="32.2" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-11
+Commits: 2
+Open: 5 | Close: 2
+High: 7.5 | Low: 0.3</title>
+  <line x1="327.7" y1="289.5" x2="327.7" y2="347.6" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="320.5" y="309.7" width="14.3" height="24.2" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-12
+Commits: 11
+Open: 2 | Close: 11
+High: 13.4 | Low: 0.1</title>
+  <line x1="353.6" y1="242.0" x2="353.6" y2="349.2" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="346.5" y="261.3" width="14.3" height="72.6" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-13
+Commits: 8
+Open: 11 | Close: 8
+High: 13.4 | Low: 6.7</title>
+  <line x1="379.6" y1="242.0" x2="379.6" y2="296.0" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="372.5" y="261.3" width="14.3" height="24.2" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-14
+Commits: 9
+Open: 8 | Close: 9
+High: 10.9 | Low: 6.7</title>
+  <line x1="405.6" y1="262.1" x2="405.6" y2="296.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="398.4" y="277.4" width="14.3" height="8.1" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-15
+Commits: 3
+Open: 9 | Close: 3
+High: 11.5 | Low: 1.8</title>
+  <line x1="431.5" y1="257.3" x2="431.5" y2="335.5" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="424.4" y="277.4" width="14.3" height="48.4" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-16
+Commits: 1
+Open: 3 | Close: 1
+High: 3.5 | Low: 0.1</title>
+  <line x1="457.5" y1="321.8" x2="457.5" y2="349.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="450.4" y="325.8" width="14.3" height="16.1" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-17
+Commits: 10
+Open: 1 | Close: 10
+High: 10.8 | Low: 0.0</title>
+  <line x1="483.5" y1="262.9" x2="483.5" y2="350.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="476.3" y="269.4" width="14.3" height="72.6" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-18
+Commits: 6
+Open: 10 | Close: 6
+High: 11.0 | Low: 4.7</title>
+  <line x1="509.4" y1="261.3" x2="509.4" y2="312.1" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="502.3" y="269.4" width="14.3" height="32.2" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-19
+Commits: 28
+Open: 6 | Close: 28
+High: 29.3 | Low: 5.0</title>
+  <line x1="535.4" y1="113.8" x2="535.4" y2="309.7" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="528.3" y="124.3" width="14.3" height="177.4" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-20
+Commits: 16
+Open: 28 | Close: 16
+High: 30.2 | Low: 15.1</title>
+  <line x1="561.4" y1="106.5" x2="561.4" y2="228.3" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="554.2" y="124.3" width="14.3" height="96.7" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-21
+Commits: 11
+Open: 16 | Close: 11
+High: 18.1 | Low: 9.9</title>
+  <line x1="587.3" y1="204.1" x2="587.3" y2="270.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="580.2" y="221.0" width="14.3" height="40.3" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-22
+Commits: 0
+Open: 11 | Close: 0
+High: 13.3 | Low: 0.0</title>
+  <line x1="613.3" y1="242.8" x2="613.3" y2="350.0" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="606.2" y="261.3" width="14.3" height="88.7" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-23
+Commits: 2
+Open: 0 | Close: 2
+High: 4.0 | Low: 0.0</title>
+  <line x1="639.3" y1="317.8" x2="639.3" y2="350.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="632.1" y="333.9" width="14.3" height="16.1" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-24
+Commits: 8
+Open: 2 | Close: 8
+High: 10.0 | Low: 0.4</title>
+  <line x1="665.2" y1="269.4" x2="665.2" y2="346.8" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="658.1" y="285.5" width="14.3" height="48.4" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-25
+Commits: 8
+Open: 8 | Close: 8
+High: 10.2 | Low: 6.7</title>
+  <line x1="691.2" y1="267.8" x2="691.2" y2="296.0" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="684.1" y="285.5" width="14.3" height="1.0" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-26
+Commits: 12
+Open: 8 | Close: 12
+High: 13.3 | Low: 6.1</title>
+  <line x1="717.2" y1="242.8" x2="717.2" y2="300.8" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="710.0" y="253.3" width="14.3" height="32.2" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-27
+Commits: 7
+Open: 12 | Close: 7
+High: 14.8 | Low: 6.3</title>
+  <line x1="743.1" y1="230.7" x2="743.1" y2="299.2" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="736.0" y="253.3" width="14.3" height="40.3" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-28
+Commits: 12
+Open: 7 | Close: 12
+High: 14.7 | Low: 5.6</title>
+  <line x1="769.1" y1="231.5" x2="769.1" y2="304.9" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="762.0" y="253.3" width="14.3" height="40.3" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-29
+Commits: 2
+Open: 12 | Close: 2
+High: 13.0 | Low: 1.2</title>
+  <line x1="795.1" y1="245.2" x2="795.1" y2="340.3" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="787.9" y="253.3" width="14.3" height="80.6" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-30
+Commits: 14
+Open: 2 | Close: 14
+High: 15.5 | Low: 0.4</title>
+  <line x1="821.0" y1="225.0" x2="821.0" y2="346.8" stroke="#26a641" stroke-width="1" stroke-linecap="round"/>
+  <rect x="813.9" y="237.1" width="14.3" height="96.7" fill="url(#greenGrad)" stroke="#26a641" stroke-width="0.5" rx="1"/>
+</g>
+<g style="cursor: pointer;">
+  <title>Date: 2026-08-31
+Commits: 7
+Open: 14 | Close: 7
+High: 15.3 | Low: 5.4</title>
+  <line x1="847.0" y1="226.6" x2="847.0" y2="306.5" stroke="#f85149" stroke-width="1" stroke-linecap="round"/>
+  <rect x="839.9" y="237.1" width="14.3" height="56.4" fill="url(#redGrad)" stroke="#f85149" stroke-width="0.5" rx="1"/>
+</g>
 
 <!-- SMA(4) Moving Average -->
 <polyline points="145.9,299.6 171.9,289.5 197.8,299.6 223.8,293.6 249.8,299.6 275.7,311.7 301.7,313.7 327.7,327.8 353.6,311.7 379.6,297.6 405.6,289.5 431.5,287.5 457.5,307.7 483.5,303.6 509.4,309.7 535.4,259.3 561.4,229.1 587.3,227.1 613.3,239.1 639.3,291.5 665.2,307.7 691.2,313.7 717.2,289.5 743.1,279.5 769.1,271.4 795.1,283.5 821.0,279.5 847.0,279.5" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" clip-path="url(#chartClip)" filter="url(#glow)"/>
@@ -216,6 +433,6 @@
 <line x1="55" y1="350" x2="860" y2="350" stroke="#30363d" stroke-width="0.5"/>
 
 <!-- Footer -->
-<text x="450.0" y="460" fill="#8b949e" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle" opacity="0.4">github-contributions-candlestick · updated 2026-08-31 07:12 UTC</text>
+<text x="450.0" y="460" fill="#8b949e" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle" opacity="0.4">github-contributions-candlestick · updated 2026-08-31 07:16 UTC</text>
 
 </svg>
