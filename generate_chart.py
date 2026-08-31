@@ -466,41 +466,68 @@ def generate_svg(candles, username, total_contributions):
 #  DEMO DATA GENERATOR
 # ═══════════════════════════════════════════════════════════════════════════
 
-def generate_demo_data():
-    """Generate realistic-looking demo contribution data for testing."""
+def generate_demo_data(username="trader-dev"):
+    """Generate realistic-looking, continuous, and highly active mock contribution data.
+    
+    Creates a beautiful stock-like chart with connected candles (Open = previous Close),
+    showing a strong bullish trend with some pullbacks, realistic volume, and active daily commits.
+    """
     import random
-    random.seed(42)
+    # Use username as seed so the graph is consistent for each user
+    seed_val = sum(ord(c) for c in username)
+    random.seed(seed_val)
 
     candles = []
-    base = 4
-
+    
+    # Start with a base price of 8 contributions
+    current = 8.0
+    
     for week_idx in range(52):
+        # Overall upward trend (positive drift)
+        # Drift is slightly higher in the middle and end to simulate a bull run
+        if week_idx < 15:
+            drift = 0.2  # slow start
+        elif week_idx < 35:
+            drift = 0.6  # strong acceleration
+        elif week_idx < 45:
+            drift = -0.3 # healthy pullback
+        else:
+            drift = 1.2  # final moon shot
+            
+        change = random.normalvariate(drift, 1.8)
+        
+        open_val = current
+        close_val = max(1.0, open_val + change)
+        current = close_val
+        
+        # High and Low wicks based on volatility
+        high_val = max(open_val, close_val) + max(0.2, abs(random.normalvariate(0.5, 1.0)))
+        low_val = max(0.0, min(open_val, close_val) - max(0.2, abs(random.normalvariate(0.3, 0.8))))
+        
+        # Generate realistic daily commits (volume)
+        # Weekdays have more commits, weekends have fewer
+        weekly_volume = int(close_val * 4) + random.randint(15, 35)
         days = []
         for day in range(7):
-            if day < 5:  # weekday — more active
-                mu = base + 3
-                count = max(0, int(random.gauss(mu, mu * 0.6)))
-            else:  # weekend — less active
-                mu = base * 0.4 + 1
-                count = max(0, int(random.gauss(mu, mu * 0.8)))
-            days.append(count)
-
-        # Organic drift — slowly trend upward with seasonal dips
-        seasonal = math.sin(week_idx / 52 * 2 * math.pi) * 1.5
-        base = max(1, base + random.gauss(0.08, 0.8) + seasonal * 0.05)
-
-        start_date = datetime(2025, 9, 1) + timedelta(weeks=week_idx)
+            if day < 5:  # weekday
+                share = 0.16 + random.normalvariate(0, 0.04)
+            else:  # weekend
+                share = 0.08 + random.normalvariate(0, 0.03)
+            day_commits = max(0, int(weekly_volume * max(0.01, share)))
+            days.append(day_commits)
+            
+        start_date = datetime.now() - timedelta(weeks=52 - week_idx)
         dates = [(start_date + timedelta(days=d)).strftime("%Y-%m-%d") for d in range(7)]
 
         candles.append({
-            "open":       days[0],
-            "high":       max(days),
-            "low":        min(days),
-            "close":      days[-1],
+            "open":       round(open_val, 1),
+            "high":       round(high_val, 1),
+            "low":        round(low_val, 1),
+            "close":      round(close_val, 1),
             "volume":     sum(days),
             "date_start": dates[0],
             "date_end":   dates[-1],
-            "bullish":    days[-1] >= days[0],
+            "bullish":    close_val >= open_val,
             "days":       days,
         })
 
@@ -536,7 +563,7 @@ def main():
             print("🎭 Demo mode enabled — using sample data.\n")
 
         username = username or "trader-dev"
-        candles, total = generate_demo_data()
+        candles, total = generate_demo_data(username)
     else:
         if not username:
             print("❌ GITHUB_USERNAME environment variable is required.")

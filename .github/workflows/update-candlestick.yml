@@ -34,6 +34,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
           OUTPUT_PATH: assets/contributions-candlestick.svg
+          DEMO_MODE: "true"
         run: python generate_chart.py
 
       - name: Commit and push updated chart
