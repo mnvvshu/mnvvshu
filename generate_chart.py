@@ -138,37 +138,80 @@ def fetch_contributions(username, token):
 #  DATA PROCESSING
 # ═══════════════════════════════════════════════════════════════════════════
 
-def contributions_to_ohlc(calendar):
-    """Convert daily contribution data to weekly OHLC candles."""
+def extract_current_month_days(calendar):
+    """Extract contribution days for the current calendar month."""
     weeks = calendar["weeks"]
-    candles = []
-
+    all_days = []
     for week in weeks:
-        days = week["contributionDays"]
-        if not days:
-            continue
+        for d in week["contributionDays"]:
+            all_days.append(d)
 
-        counts = [d["contributionCount"] for d in days]
-        dates = [d["date"] for d in days]
+    if not all_days:
+        return []
 
-        open_val = counts[0]
-        close_val = counts[-1]
-        high_val = max(counts)
-        low_val = min(counts)
-        total_vol = sum(counts)
+    # Find the latest day in the calendar to determine the current year and month
+    latest_day = all_days[-1]
+    latest_date = datetime.strptime(latest_day["date"], "%Y-%m-%d")
+    current_year = latest_date.year
+    current_month = latest_date.month
 
+    # Filter for the current month
+    month_days = []
+    for d in all_days:
+        d_date = datetime.strptime(d["date"], "%Y-%m-%d")
+        if d_date.year == current_year and d_date.month == current_month:
+            month_days.append(d)
+
+    # Fallback to the previous month if we have fewer than 10 days in the current month
+    if len(month_days) < 10:
+        prev_month = current_month - 1 if current_month > 1 else 12
+        prev_year = current_year if current_month > 1 else current_year - 1
+        month_days = []
+        for d in all_days:
+            d_date = datetime.strptime(d["date"], "%Y-%m-%d")
+            if d_date.year == prev_year and d_date.month == prev_month:
+                month_days.append(d)
+
+    return month_days
+
+
+def daily_contributions_to_ohlc(days):
+    """Convert daily contribution counts to daily OHLC candles."""
+    import random
+    candles = []
+    
+    for i, d in enumerate(days):
+        count = d["contributionCount"]
+        date_str = d["date"]
+        
+        # Open is previous day's close
+        if i == 0:
+            open_val = max(1.0, count * 0.8 + 1.0)
+        else:
+            open_val = candles[-1]["close"]
+            
+        close_val = count
+        
+        # High and Low wicks based on daily count
+        if count == 0 and open_val < 1:
+            high_val = max(open_val, close_val) + 0.5
+            low_val = 0.0
+        else:
+            high_val = max(open_val, close_val) + random.uniform(0.5, 3.0)
+            low_val = max(0.0, min(open_val, close_val) - random.uniform(0.5, 2.0))
+            
         candles.append({
-            "open":       open_val,
-            "high":       high_val,
-            "low":        low_val,
-            "close":      close_val,
-            "volume":     total_vol,
-            "date_start": dates[0],
-            "date_end":   dates[-1],
+            "open":       round(open_val, 1),
+            "high":       round(high_val, 1),
+            "low":        round(low_val, 1),
+            "close":      round(close_val, 1),
+            "volume":     count,
+            "date_start": date_str,
+            "date_end":   date_str,
             "bullish":    close_val >= open_val,
-            "days":       counts,
+            "days":       [count],
         })
-
+        
     return candles
 
 
@@ -253,10 +296,10 @@ def generate_svg(candles, username, total_contributions):
     first_close = candles[0]["close"]
     last_close = candles[-1]["close"]
     pct_change = ((last_close - first_close) / first_close * 100) if first_close > 0 else 0.0
-    avg_daily = total_contributions / max(n * 7, 1)
+    avg_daily = total_contributions / max(n, 1)
     best_day = max(max(c["days"]) for c in candles)
-    bullish_weeks = sum(1 for c in candles if c["bullish"])
-    bearish_weeks = n - bullish_weeks
+    bullish_days = sum(1 for c in candles if c["bullish"])
+    bearish_days = n - bullish_days
 
     # Current bullish streak
     streak = 0
@@ -269,6 +312,11 @@ def generate_svg(candles, username, total_contributions):
     trend_color = COLORS["green_bright"] if pct_change >= 0 else COLORS["red_bright"]
     trend_arrow = "▲" if pct_change >= 0 else "▼"
     trend_sign = "+" if pct_change >= 0 else ""
+
+    # Extract month name
+    month_idx = int(candles[0]["date_start"].split("-")[1])
+    month_name = MONTHS[month_idx - 1]
+    year = candles[0]["date_start"].split("-")[0]
 
     # ── Nice Y-axis tick values ──────────────────────────────────────────
     def nice_ticks(max_val, num_ticks=5):
@@ -330,14 +378,21 @@ def generate_svg(candles, username, total_contributions):
 <!-- Title bar -->
 <text x="{chart_left}" y="30" fill="{COLORS['text']}" font-family="'Segoe UI','SF Pro Display',system-ui,sans-serif" font-size="18" font-weight="700">{_esc(username.upper())}</text>
 <text x="{chart_left}" y="50" fill="{trend_color}" font-family="'SF Mono','Cascadia Code',monospace" font-size="14" font-weight="600">{trend_arrow} {trend_sign}{pct_change:.1f}%</text>
-<text x="{chart_left + 110}" y="50" fill="{COLORS['text_dim']}" font-family="'Segoe UI',system-ui,sans-serif" font-size="11">Contributions · {n} weeks · Total: {total_contributions:,}</text>
-<text x="{chart_right}" y="30" fill="{COLORS['text_dim']}" font-family="'SF Mono',monospace" font-size="10" text-anchor="end">AVG/DAY: {avg_daily:.1f}  |  BEST: {best_day}  |  STREAK: {streak}W</text>
-<text x="{chart_right}" y="46" fill="{COLORS['text_dim']}" font-family="'SF Mono',monospace" font-size="10" text-anchor="end">BULLISH: {bullish_weeks}W  |  BEARISH: {bearish_weeks}W</text>''')
+<text x="{chart_left + 110}" y="50" fill="{COLORS['text_dim']}" font-family="'Segoe UI',system-ui,sans-serif" font-size="11">Contributions · {month_name} {year} · Total: {total_contributions:,}</text>
+<text x="{chart_right}" y="30" fill="{COLORS['text_dim']}" font-family="'SF Mono',monospace" font-size="10" text-anchor="end">AVG/DAY: {avg_daily:.1f}  |  BEST: {best_day}  |  STREAK: {streak}D</text>
+<text x="{chart_right}" y="46" fill="{COLORS['text_dim']}" font-family="'SF Mono',monospace" font-size="10" text-anchor="end">BULLISH: {bullish_days}D  |  BEARISH: {bearish_days}D</text>''')
 
     # ── Chart panel background ───────────────────────────────────────────
     parts.append(f'''
 <!-- Chart panel -->
 <rect x="{chart_left}" y="{chart_top}" width="{chart_width}" height="{chart_height}" rx="3" fill="{COLORS['panel']}" opacity="0.4"/>''')
+
+    # Watermark Month Label (top-left of chart panel)
+    parts.append(
+        f'<text x="{chart_left + 15}" y="{chart_top + 45}" fill="{COLORS["text"]}" '
+        f'opacity="0.08" font-family="\'Segoe UI\',sans-serif" font-size="36" '
+        f'font-weight="900">{month_name.upper()}</text>'
+    )
 
     # ── Grid lines + Y-axis labels ───────────────────────────────────────
     parts.append('\n<!-- Grid + Y-axis -->')
@@ -358,7 +413,7 @@ def generate_svg(candles, username, total_contributions):
     parts.append(f'\n<!-- Volume bars -->')
     parts.append(
         f'<text x="{chart_left}" y="{vol_top - 3}" fill="{COLORS["text_dim"]}" '
-        f'font-family="monospace" font-size="8">VOL (weekly)</text>'
+        f'font-family="monospace" font-size="8">VOL (daily)</text>'
     )
     for i, candle in enumerate(candles):
         x = candle_x(i)
@@ -424,24 +479,20 @@ def generate_svg(candles, username, total_contributions):
             f'── SMA(4)</text>'
         )
 
-    # ── X-axis month labels ──────────────────────────────────────────────
+    # ── X-axis day labels ────────────────────────────────────────────────
     parts.append(f'\n<!-- X-axis -->')
-    last_month = None
     for i, candle in enumerate(candles):
-        month = int(candle["date_start"].split("-")[1])
-        if month != last_month:
-            x = candle_x(i)
-            parts.append(
-                f'<text x="{x:.1f}" y="{HEIGHT - MARGIN["bottom"] + 18}" '
-                f'fill="{COLORS["text_dim"]}" font-family="monospace" font-size="9" '
-                f'text-anchor="middle">{MONTHS[month - 1]}</text>'
-            )
-            # Small tick mark
-            parts.append(
-                f'<line x1="{x:.1f}" y1="{vol_bottom}" x2="{x:.1f}" y2="{vol_bottom + 4}" '
-                f'stroke="{COLORS["grid"]}" stroke-width="1"/>'
-            )
-            last_month = month
+        day_str = str(int(candle["date_start"].split("-")[2]))
+        x = candle_x(i)
+        parts.append(
+            f'<line x1="{x:.1f}" y1="{vol_bottom}" x2="{x:.1f}" y2="{vol_bottom + 4}" '
+            f'stroke="{COLORS["grid"]}" stroke-width="1"/>'
+        )
+        parts.append(
+            f'<text x="{x:.1f}" y="{HEIGHT - MARGIN["bottom"] + 16}" '
+            f'fill="{COLORS["text_dim"]}" font-family="monospace" font-size="8" '
+            f'text-anchor="middle">{day_str}</text>'
+        )
 
     # ── Decorative elements ──────────────────────────────────────────────
     # Horizontal separator lines
@@ -467,72 +518,46 @@ def generate_svg(candles, username, total_contributions):
 # ═══════════════════════════════════════════════════════════════════════════
 
 def generate_demo_data(username="trader-dev"):
-    """Generate realistic-looking, continuous, and highly active mock contribution data.
-    
-    Creates a beautiful stock-like chart with connected candles (Open = previous Close),
-    showing a strong bullish trend with some pullbacks, realistic volume, and active daily commits.
-    """
+    """Generate active, volatile mock daily contribution data for the current month."""
     import random
-    # Use username as seed so the graph is consistent for each user
     seed_val = sum(ord(c) for c in username)
     random.seed(seed_val)
-
-    candles = []
     
-    # Start with a base price of 8 contributions
-    current = 8.0
+    # Find the current month and year
+    now = datetime.now()
+    year = now.year
+    month = now.month
     
-    for week_idx in range(52):
-        # Overall upward trend (positive drift)
-        # Drift is slightly higher in the middle and end to simulate a bull run
-        if week_idx < 15:
-            drift = 0.2  # slow start
-        elif week_idx < 35:
-            drift = 0.6  # strong acceleration
-        elif week_idx < 45:
-            drift = -0.3 # healthy pullback
-        else:
-            drift = 1.2  # final moon shot
-            
-        change = random.normalvariate(drift, 1.8)
+    # Find number of days in the current month
+    import calendar as py_calendar
+    _, num_days = py_calendar.monthrange(year, month)
+    
+    days = []
+    # Let's generate daily commit counts
+    # We want a nice mixture: some highly active days, some quiet days
+    for day in range(1, num_days + 1):
+        date_str = f"{year}-{month:02d}-{day:02d}"
+        weekday = datetime(year, month, day).weekday()
         
-        open_val = current
-        close_val = max(1.0, open_val + change)
-        current = close_val
-        
-        # High and Low wicks based on volatility
-        high_val = max(open_val, close_val) + max(0.2, abs(random.normalvariate(0.5, 1.0)))
-        low_val = max(0.0, min(open_val, close_val) - max(0.2, abs(random.normalvariate(0.3, 0.8))))
-        
-        # Generate realistic daily commits (volume)
-        # Weekdays have more commits, weekends have fewer
-        weekly_volume = int(close_val * 4) + random.randint(15, 35)
-        days = []
-        for day in range(7):
-            if day < 5:  # weekday
-                share = 0.16 + random.normalvariate(0, 0.04)
-            else:  # weekend
-                share = 0.08 + random.normalvariate(0, 0.03)
-            day_commits = max(0, int(weekly_volume * max(0.01, share)))
-            days.append(day_commits)
-            
-        start_date = datetime.now() - timedelta(weeks=52 - week_idx)
-        dates = [(start_date + timedelta(days=d)).strftime("%Y-%m-%d") for d in range(7)]
-
-        candles.append({
-            "open":       round(open_val, 1),
-            "high":       round(high_val, 1),
-            "low":        round(low_val, 1),
-            "close":      round(close_val, 1),
-            "volume":     sum(days),
-            "date_start": dates[0],
-            "date_end":   dates[-1],
-            "bullish":    close_val >= open_val,
-            "days":       days,
+        # Decide average commits for this day
+        if weekday < 5:  # weekday
+            if random.random() < 0.25:  # high-commit day (major feature ship)
+                count = random.randint(12, 28)
+            else:
+                count = max(0, int(random.normalvariate(8, 3.5)))
+        else:  # weekend
+            if random.random() < 0.2:  # occasional weekend coder
+                count = random.randint(5, 15)
+            else:
+                count = max(0, int(random.normalvariate(2, 1.8)))
+                
+        days.append({
+            "contributionCount": count,
+            "date": date_str,
+            "weekday": weekday
         })
-
-    total = sum(c["volume"] for c in candles)
-    return candles, total
+        
+    return days
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -563,7 +588,9 @@ def main():
             print("🎭 Demo mode enabled — using sample data.\n")
 
         username = username or "trader-dev"
-        candles, total = generate_demo_data(username)
+        days = generate_demo_data(username)
+        total = sum(d["contributionCount"] for d in days)
+        candles = daily_contributions_to_ohlc(days)
     else:
         if not username:
             print("❌ GITHUB_USERNAME environment variable is required.")
@@ -571,9 +598,10 @@ def main():
 
         print(f"📡 Fetching contributions for @{username}...")
         calendar = fetch_contributions(username, token)
-        total = calendar["totalContributions"]
-        candles = contributions_to_ohlc(calendar)
-        print(f"   ✓ {total:,} contributions across {len(candles)} weeks\n")
+        days = extract_current_month_days(calendar)
+        total = sum(d["contributionCount"] for d in days)
+        candles = daily_contributions_to_ohlc(days)
+        print(f"   ✓ {total:,} contributions across {len(candles)} days\n")
 
     print(f"🕯️  Rendering candlestick chart ({len(candles)} candles)...")
     svg = generate_svg(candles, username, total)
@@ -595,7 +623,7 @@ def main():
     bullish = sum(1 for c in candles if c["bullish"])
     bearish = len(candles) - bullish
     print(f"\n📊 Stats: {total:,} contributions | "
-          f"🟢 {bullish}W bullish | 🔴 {bearish}W bearish")
+          f"🟢 {bullish}D bullish | 🔴 {bearish}D bearish")
     print("✅ Done!\n")
 
 
