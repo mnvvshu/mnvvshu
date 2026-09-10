@@ -31,7 +31,7 @@ jobs:
 
       - name: Generate candlestick chart
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
           OUTPUT_PATH: assets/contributions-candlestick.svg
         run: python generate_chart.py

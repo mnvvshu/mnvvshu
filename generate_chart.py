@@ -534,13 +534,14 @@ def generate_svg(candles, username, total_contributions):
 def generate_demo_data(username="trader-dev"):
     """Generate active, volatile mock daily contribution data for the current month."""
     import random
-    seed_val = sum(ord(c) for c in username)
-    random.seed(seed_val)
     
     # Find the current month and year
     now = datetime.now()
     year = now.year
     month = now.month
+    
+    seed_val = sum(ord(c) for c in username) + year * 100 + month
+    random.seed(seed_val)
     
     # Find number of days in the current month
     import calendar as py_calendar
