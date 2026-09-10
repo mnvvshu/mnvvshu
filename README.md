@@ -35,7 +35,7 @@ Hey there! I'm **Manvesh** — a passionate developer who loves to push the boun
 
 <div align="center">
 
-<img src="./assets/contributions-candlestick.svg" alt="GitHub Contributions Candlestick Chart" width="100%">
+<img src="./assets/contributions-candlestick.svg?v=2" alt="GitHub Contributions Candlestick Chart" width="100%">
 
 <sub>Each candle = 1 day · 🟢 Bullish (more commits than yesterday) · 🔴 Bearish (fewer commits than yesterday) · Blue line = 4-day SMA</sub>
 
